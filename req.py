@@ -33,7 +33,7 @@ def process_directory(directory):
 def write_to_file(libs, filename):
     with open(filename, "w") as f:
         for lib in libs:
-            if lib != 'main' or lib != '':
+            if lib != 'main' and lib != '':
                 f.write(lib + "\n")
 
 blocknote_dir = os.path.join(os.path.dirname(__file__), "blocknote-master")
